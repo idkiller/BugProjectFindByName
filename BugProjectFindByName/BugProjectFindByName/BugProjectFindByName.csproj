@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Include Nuget Package for Xamarin building -->
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.589792-nightly" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MainApp.xaml.cs">
+      <DependentUpon>MainApp.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="MainApp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

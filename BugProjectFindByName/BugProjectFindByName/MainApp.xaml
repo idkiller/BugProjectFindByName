@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="BugProjectFindByName.MainApp"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:local="clr-namespace:BugProjectFindByName"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.MainPage>
+        <local:TestPage>
+            <local:TestPage.Content>
+                <StackLayout>
+                    <Button x:Name="Foo" Text="Foo"/>
+                </StackLayout>
+            </local:TestPage.Content>
+        </local:TestPage>
+    </Application.MainPage>
+</Application>
